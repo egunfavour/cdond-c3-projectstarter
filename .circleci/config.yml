@@ -94,7 +94,7 @@
         - restore_cache:
             keys: [backend-build]
         - run:
-            name: back-end build
+            name: run backend build
             command: |
               cd backend
               npm install
