@@ -1,0 +1,13 @@
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc., v0.10.0)
+  compose: Docker Compose (Docker Inc., v2.15.1)
+  dev: Docker Dev Environments (Docker Inc., v0.0.5)
+  extension: Manages Docker extensions (Docker Inc., v0.2.17)
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan: Docker Scan (Docker Inc., v0.23.0)
+
+Server:
+ERROR: error during connect: This error may indicate that the docker daemon is not running.: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/info": open //./pipe/docker_engine: The system cannot find the file specified.
