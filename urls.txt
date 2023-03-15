@@ -1,2 +1,2 @@
-https://github.com/egunfavour/cdond-c3-projectstarter == repository
-http://udapeople-db47adb.s3-website-us-east-1.amazonaws.com == bucket url.
+https://github.com/egunfavour/cdond-c3-projectstarter == URL01
+http://udapeople-bd800e0.s3-website-us-east-1.amazonaws.com == bucket url.
