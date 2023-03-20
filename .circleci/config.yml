@@ -228,7 +228,7 @@
         # Add ssh keys with fingerprint
         - add_ssh_keys:
             fingerprints:
-              - 2b:d8:30:8a:43:e1:ed:67:49:c9:79:3d:a3:a3:a0:d8
+              - 	e7:a3:f0:2e:d9:38:a5:fc:09:11:1f:71:2e:4e:77:55
         - attach_workspace:
             at: ~/
         # attach workspace
@@ -333,7 +333,7 @@
           - checkout
           - add_ssh_keys:
               fingerprints:
-                - 2b:d8:30:8a:43:e1:ed:67:49:c9:79:3d:a3:a3:a0:d8
+                - 	e7:a3:f0:2e:d9:38:a5:fc:09:11:1f:71:2e:4e:77:55
           - attach_workspace:
               at: ~/
           - run:
