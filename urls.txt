@@ -1,2 +1,2 @@
 https://github.com/egunfavour/cdond-c3-projectstarter == URL01
-http://udapeople-bd800e0.s3-website-us-east-1.amazonaws.com == bucket url.
+http://udapeople-ce9859a.s3-website-us-east-1.amazonaws.com == bucket url.
