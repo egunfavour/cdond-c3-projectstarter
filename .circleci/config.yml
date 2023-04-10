@@ -278,7 +278,6 @@
 
                 # curl --insecure https://kvdb.io/386US3VgH9cTZJxfc3qRMx/migration_${CIRCLE_WORKFLOW_ID:0:7}  -d '1'
             fi
-      # Here's where you will add some code to rollback on failure   
       - destroy-environment:
           workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}
       - revert-migrations
