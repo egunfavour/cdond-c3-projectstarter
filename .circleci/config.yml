@@ -61,7 +61,7 @@
             command: |
               MIGRATION_ID="migration_<< parameters.workflow_id >>"
               echo $MIGRATION_ID
-              SUCCESS=$(curl --insecure --request GET  "https://kvdb.io/VbYn3VW5794E2W7GyBTEVb/${MIGRATION_ID}")
+              SUCCESS=$(curl --insecure --request GET  "https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/${MIGRATION_ID}")
               if (( $SUCCESS == 1 )); 
               then
                 cd ~/project/backend
@@ -404,7 +404,7 @@
               sleep 60
               if curl -v $API_URL/api/status | grep "ok"
               then
-                return 0
+                return 1
               else
                 return 1
               fi
