@@ -61,7 +61,8 @@
             command: |
               MIGRATION_ID="migration_<< parameters.workflow_id >>"
               echo $MIGRATION_ID
-              SUCCESS=$(curl --insecure --request GET  "https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/${MIGRATION_ID}")
+              # SUCCESS=$(curl --insecure --request GET  "https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/${MIGRATION_ID}")
+              SUCCESS=$(curl --insecure  https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/migration_<< parameters.workflow_id >>)
               if (( $SUCCESS == 1 )); 
               then
                 cd ~/project/backend
