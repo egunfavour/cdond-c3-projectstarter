@@ -61,8 +61,7 @@
             command: |
               MIGRATION_ID="migration_<< parameters.workflow_id >>"
               echo $MIGRATION_ID
-              # SUCCESS=$(curl --insecure --request GET  "https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/${MIGRATION_ID}")
-              SUCCESS=$(curl --insecure  https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/migration_<< parameters.workflow_id >>)
+              SUCCESS=$(curl --insecure --request GET  "https://kvdb.io/LPcxtS29MUdi3FJhsRZ1fP/${MIGRATION_ID}"
               if (( $SUCCESS == 1 )); 
               then
                 cd ~/project/backend
@@ -419,7 +418,7 @@
               if curl -s $FRONTEND_WEBSITE | grep "Welcome"
               then
                   # Change this to 0 after the job fails
-                return 1
+                return 0
               else
                 return 1
               fi
